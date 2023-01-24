@@ -19,7 +19,7 @@ body {
   display: block;
   background-color: #313e45;
   border-radius: 25px;
-  background-image: url(/weather.jpg);
+  background-image: url(./img/weather.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin: 0 auto;
