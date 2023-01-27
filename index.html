@@ -30,6 +30,45 @@
 
       <div id="result">
 
+        <div class="wrapper ">
+          <div class="widget-container mt-5 text-white mb-5 w-75">
+            <div class="top-left p-4 mt-3">
+              <h1 class="city" id="city">${locations}</h1>
+              <h2 id="day">Region: ${regions}</h2>
+              <h3 id="date">Country: ${countries}</h3>
+              <h3 id="time">${time}</h3>
+              <p class="geo"></p>
+            </div>
+            <div class="top-right p-5">
+              <h1 id="weather-status">${weatherStatus}</h1>
+              <img class="weather-icon" src="${image}">
+            </div>
+            <div class="horizontal-half-divider"></div>
+            <div class="bottom-left p-4">
+              <h1 id="temperature">${temperature}</h1>
+              <h2 id="celsius">&degC</h2>
+              <h2 id="temp-divider">/</h2>
+              <h2 id="fahrenheit">&degF</h2>
+            </div>
+            <div class="vertical-half-divider"></div>
+            <div class="bottom-right p-4">
+              <div class="other-details-key">
+                <p>Wind Speed</p>
+                <p>Humidity</p>
+                <p>Pressure</p>
+                
+              </div>
+              <div class="other-details-values">
+                <p class="windspeed">${windspeed} Km/h</p>
+                <p class="humidity">${humidity} %</p>
+                <p class="pressure">${pressure} hPa</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
 
 
@@ -57,43 +96,6 @@ function displaydata(weatherDetails){
 
 
   result.innerHTML = `
-  <div class="wrapper">
-          <div class="widget-container mt-5 text-white mb-5">
-            <div class="top-left">
-              <h1 class="city" id="city">${locations}</h1>
-              <h2 id="day">Region: ${regions}</h2>
-              <h3 id="date">Country: ${countries}</h3>
-              <h3 id="time">${time}</h3>
-              <p class="geo"></p>
-            </div>
-            <div class="top-right">
-              <h1 id="weather-status">${weatherStatus}</h1>
-              <img class="weather-icon" src="${image}">
-            </div>
-            <div class="horizontal-half-divider"></div>
-            <div class="bottom-left">
-              <h1 id="temperature">${temperature}</h1>
-              <h2 id="celsius">&degC</h2>
-              <h2 id="temp-divider">/</h2>
-              <h2 id="fahrenheit">&degF</h2>
-            </div>
-            <div class="vertical-half-divider"></div>
-            <div class="bottom-right">
-              <div class="other-details-key">
-                <p>Wind Speed</p>
-                <p>Humidity</p>
-                <p>Pressure</p>
-                
-              </div>
-              <div class="other-details-values">
-                <p class="windspeed">${windspeed} Km/h</p>
-                <p class="humidity">${humidity} %</p>
-                <p class="pressure">${pressure} hPa</p>
-                
-              </div>
-            </div>
-          </div>
-        </div>
 
   `
 

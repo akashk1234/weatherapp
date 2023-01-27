@@ -14,7 +14,6 @@ body {
 }
 
 .widget-container {
-  width: 612px;
   height: 412px;
   display: block;
   background-color: #313e45;
@@ -32,7 +31,6 @@ body {
 .top-left {
   height: 60%;
   width: 50%;
-  padding: 55px 0 0 70px;
   display: inline-block;
 }
 
@@ -40,7 +38,6 @@ body {
   height: 60%;
   width: 50%;
   float: right;
-  padding: 55px 0 0 0;
 }
 
 .bottom-left {
@@ -49,14 +46,12 @@ body {
   /*   background-color:orange; */
   float: left;
   margin: 0;
-  padding: 40px 0 0 50px;
 }
 
 .bottom-right {
   height: 50%;
   width: 55%;
   float: right;
-  padding: 20px 0 0 60px;
 }
 
 h1,
@@ -93,11 +88,8 @@ p {
   margin-top: 8px;
 }
 
-#codepen-link {
-  font-weight: 400;
-  font-size: 12px;
-  margin-top: 20px;
-}
+
+
 
 .top-left > a {
   text-decoration: none;
@@ -109,7 +101,7 @@ p {
 }
 
 
-/* Top-Right Div CSS */
+
 
 #weather-status {
   font-size: 18px;
@@ -126,7 +118,7 @@ p {
 }
 
 
-/* Horizontal-Half-divider */
+
 
 .horizontal-half-divider {
   width: 100%;
@@ -138,7 +130,7 @@ p {
 .vertical-half-divider {
   width: 3px;
   position: absolute;
-  height: 167px;
+  height: 150px;
   background-color: #626262;
   float: right;
   display: inline-block;
