@@ -1,27 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300);
-body {
-  width: 100%;
-  height: 100%;
-  background-color: #263238;
-  
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  color: #fff;
-  /* background-image: url(./bg.webp);
+html,body {
+ width: 100%;
+ height: 100%;
+ margin: 0px;
+ padding: 0px;
+ overflow-x :hidden;
+
+  background-image: url(./img/bg.webp);
   background-repeat: no-repeat;
-  background-size: 100% 100%; */
-}
+  background-size: 100% 100%; 
+} 
 
 .widget-container {
   height: 412px;
-  display: block;
+  /* display: block; */
   background-color: #313e45;
   border-radius: 25px;
   background-image: url(./img/weather.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin: 0 auto;
   
 }
 
@@ -42,7 +39,7 @@ body {
 
 .bottom-left {
   height: 40%;
-  width: 45%;
+  width: 40%;
   /*   background-color:orange; */
   float: left;
   margin: 0;
@@ -50,7 +47,7 @@ body {
 
 .bottom-right {
   height: 50%;
-  width: 55%;
+  width: 60%;
   float: right;
 }
 
@@ -72,7 +69,7 @@ p {
 
 #day {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 18px;
 }
 
@@ -127,7 +124,7 @@ p {
   background-color: #6b6b6b;
 }
 
-.vertical-half-divider {
+.vertical-half-dividr {
   width: 3px;
   position: absolute;
   height: 150px;
@@ -173,42 +170,4 @@ p {
 #celsius:hover,
 #fahrenheit:hover {
   cursor: pointer;
-}
-
-
-
-
-/* Bottom-Right CSS */
-
-.other-details-key {
-  float: left;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.other-details-values {
-  float: left;
-  font-size: 16px;
-  font-weight: 400;
-  margin-left: 40px;
-}
-
-.watermark-link {
-  text-decoration:none;
-  color:#b0bec5;
-}
-
-.watermark-link:hover {
-  color:white;
-  text-decoration:none;
-}
-
-.watermark {
-  margin-top:10px;
-  text-align:center;
-  font-weight:400;
-}
-
-#place{
-  border-radius: 15px;
 }

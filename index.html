@@ -14,9 +14,9 @@
 </head>
 <body>
 
-  <div class="container text-center  p-5">
-    <h1><strong>Real time Weather⛅</strong></h1>
-    <div class="input-group">
+  <div class="container text-center   p-5">
+    <h1 class="mt-3 text-white" ><strong>Real time Weather⛅</strong></h1>
+    <div class="input-group mt-4">
       <input id="cityname" type="text" class="form-control border border-info" placeholder="Enter city name">
       <div class="input-group-append">
         <button onclick="search()" class="btn btn-info text-white" type="button">
@@ -30,43 +30,6 @@
 
       <div id="result">
 
-        <div class="wrapper ">
-          <div class="widget-container mt-5 text-white mb-5 w-75">
-            <div class="top-left p-4 mt-3">
-              <h1 class="city" id="city">${locations}</h1>
-              <h2 id="day">Region: ${regions}</h2>
-              <h3 id="date">Country: ${countries}</h3>
-              <h3 id="time">${time}</h3>
-              <p class="geo"></p>
-            </div>
-            <div class="top-right p-5">
-              <h1 id="weather-status">${weatherStatus}</h1>
-              <img class="weather-icon" src="${image}">
-            </div>
-            <div class="horizontal-half-divider"></div>
-            <div class="bottom-left p-4">
-              <h1 id="temperature">${temperature}</h1>
-              <h2 id="celsius">&degC</h2>
-              <h2 id="temp-divider">/</h2>
-              <h2 id="fahrenheit">&degF</h2>
-            </div>
-            <div class="vertical-half-divider"></div>
-            <div class="bottom-right p-4">
-              <div class="other-details-key">
-                <p>Wind Speed</p>
-                <p>Humidity</p>
-                <p>Pressure</p>
-                
-              </div>
-              <div class="other-details-values">
-                <p class="windspeed">${windspeed} Km/h</p>
-                <p class="humidity">${humidity} %</p>
-                <p class="pressure">${pressure} hPa</p>
-                
-              </div>
-            </div>
-          </div>
-        </div>
 
 
       </div>
@@ -96,6 +59,42 @@ function displaydata(weatherDetails){
 
 
   result.innerHTML = `
+  <div class="wrapper p-5">
+          <div class="widget-container mt-5 text-white mb-5 w-100">
+            <div class="top-left p-4 mt-3">
+              <h1 class="city " id="city">${locations}</h1>
+              <h2 id="day" >Region: ${regions}</h2>
+              <h3 id="date ">Country: ${countries}</h3>
+              <h3 id="time">${time}</h3>
+              <p class="geo"></p>
+            </div>
+            <div class="top-right mt-5">
+              <h1 id="weather-status">${weatherStatus}</h1>
+              <img class="weather-icon" src="${image}">
+            </div>
+            <div class="horizontal-half-divider"></div>
+            <div class="bottom-left p-4">
+              <h1 id="temperature">${temperature}</h1>
+              <h2 id="celsius">&degC</h2>
+              
+            </div>
+            <div class="vertical-half-divider"></div>
+            <div class="bottom-right  ">
+              <div class="other-details-key ms-5 mb-3" >
+                <p>Wind Speed: ${windspeed} Km/h</p>
+                <p>Humidity: ${humidity} %</p>
+                <p>Pressure: ${pressure} hPa</p>
+                
+              </div>
+              <div class="other-details-values" >
+                <p class="windspeed"> </p>
+                <p class="humidity"></p>
+                <p class="pressure"></p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
 
   `
 
